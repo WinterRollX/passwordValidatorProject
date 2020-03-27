@@ -12,12 +12,18 @@ import {
 } from 'semantic-ui-react'
 import { Link } from "react-router-dom";
 
-interface Props {
+interface MenuItem {
+    text: string;
+    to: string;
+    style: object;
+}
 
+interface Props {
+    menuItems?: MenuItem[];
 }
 
 const Layout: React.FC<Props> =
-    ( { children } ) => {
+    ( { children, menuItems } ) => {
 
         return (
             <div>
@@ -31,9 +37,10 @@ const Layout: React.FC<Props> =
 
                         <Dropdown item simple text='  Test demos  '>
                             <Dropdown.Menu>
-                                <Dropdown.Item><Link to='/passwordDemo'>Password Hook</Link></Dropdown.Item>
-                                <Dropdown.Item><Link to='/duckTester'>Duck tester</Link></Dropdown.Item>
-                                <Dropdown.Item><Link to='/'>Home</Link></Dropdown.Item>
+                                <Dropdown.Item><Link to='/passwordDemo' style={{color:'black'}}>Password Hook</Link></Dropdown.Item>
+                                <Dropdown.Item><Link to='/duckTester' style={{color:'black'}}>Duck tester</Link></Dropdown.Item>
+                                <Dropdown.Item><Link to='/observerTester' style={{color:'black'}}>Observer Pattern</Link></Dropdown.Item>
+                                <Dropdown.Item><Link to='/' style={{color:'black'}}>Home</Link></Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                     </Container>

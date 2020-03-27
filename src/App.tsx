@@ -3,6 +3,7 @@ import './App.css';
 import { Layout } from './components/layout';
 import { PasswordInput } from './components/passwordInput';
 import { DuckTester } from './components/duckTester';
+import { ObserverTester } from './components/observerTester';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
               </Route>
               <Route path="/duckTester">
                 <DuckTester duckType='normal duck' />
+              </Route>
+              <Route path="/observerTester">
+                <ObserverTester />
               </Route>
               <Route path="*">
                 <div>404 not fount component</div>
