@@ -29,6 +29,55 @@
   color: #61dafb;
 }
 
+.main-menu-link {
+  color: black !important;
+}
+
+/* duck tester component*/
+.duck_tester-action-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+/* observer tester component */
+.observer-tester-container {
+  width: 100%;
+  min-height: 600px;
+  border: 1px dashed deepskyblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.observer-tester-subject-container {
+  min-width:200px;
+  min-height: 100px;
+}
+.observer-tester-observers-container {
+  min-width:200px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.observer-tester-observers-container>.ui.segment {
+  margin-right: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.content {
+  text-align: left;
+}
+.observer-tester-actions-container {
+  min-width:200px;
+  min-height: 100px;
+  margin-top: 20px;  
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

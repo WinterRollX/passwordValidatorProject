@@ -33,20 +33,20 @@ const Layout: React.FC<Props> =
                             <Image size='mini' src='/logo192.png' style={{ marginRight: '1.5em' }} />
                             Project Name
                         </Menu.Item>
-                        <Menu.Item as='a'><Link to='/'>Home</Link></Menu.Item>
+                        <Menu.Item><Link to='/'>Home</Link></Menu.Item>
 
                         <Dropdown item simple text='  Test demos  '>
                             <Dropdown.Menu>
-                                <Dropdown.Item><Link to='/passwordDemo' style={{color:'black'}}>Password Hook</Link></Dropdown.Item>
-                                <Dropdown.Item><Link to='/duckTester' style={{color:'black'}}>Duck tester</Link></Dropdown.Item>
-                                <Dropdown.Item><Link to='/observerTester' style={{color:'black'}}>Observer Pattern</Link></Dropdown.Item>
-                                <Dropdown.Item><Link to='/' style={{color:'black'}}>Home</Link></Dropdown.Item>
+                                <Dropdown.Item><Link to='/passwordDemo' className = 'main-menu-link'>Password Hook</Link></Dropdown.Item>
+                                <Dropdown.Item><Link to='/duckTester' className = 'main-menu-link'>Duck tester</Link></Dropdown.Item>
+                                <Dropdown.Item><Link to='/observerTester' className = 'main-menu-link'>Observer Pattern</Link></Dropdown.Item>
+                                <Dropdown.Item><Link to='/' className = 'main-menu-link'>Home</Link></Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                     </Container>
                 </Menu>
 
-                <Container style={{ marginTop: '7em', minHeight:'800px' }}>
+                <Container style={{ marginTop: '7em', minHeight:'600px' }}>
                     {children}
                 </Container>
 

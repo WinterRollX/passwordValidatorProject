@@ -33,6 +33,9 @@ code {
 .duck-tester {
   line-height: 1.5;
 }
+.duck-tester>div {
+  margin-top: 15px;
+}
 .action-button {
   width: 100px;
 }

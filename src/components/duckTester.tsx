@@ -51,6 +51,7 @@ class QuackAsNormalDuck implements QuackBehavior {
             this.hostAction = hostAction;
         };
         this.tag = behaviorTag;
+        console.log('newed a new quack object instance');
     }
 }
 
@@ -83,7 +84,7 @@ const DuckTester: React.FC<DuckProps> =
             <div>
                 {`Message: ${consoleMessage}`}
             </div>
-            <div>
+            <div className='duck_tester-action-buttons'>
                 <Button className='action-button wide-button' onClick={() => {
                     if(currentFlyBehavior.tag === 'FlyNotPossible'){
                         setCurrentFlyBehavior(myFlyBehavior);
@@ -92,18 +93,13 @@ const DuckTester: React.FC<DuckProps> =
                     }
 
                 }} >Toggle FlyBehavior</Button>
-            </div>
-            <div>
                 <Button className='action-button' onClick={() => {
                     currentFlyBehavior.fly();
                 }} >Fly!</Button>
-            </div>
-            <div>
                 <Button className='action-button' onClick={() => {
                     currentQuackBehavior.quack();
                 }}>Quack!</Button>
             </div>
-
             <div>Other Content of duck tester here</div>
         </div>)
     }
