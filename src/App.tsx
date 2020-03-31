@@ -4,7 +4,8 @@ import { Layout } from './components/layout';
 import { PasswordInput } from './components/passwordInput';
 import { DuckTester } from './components/duckTester';
 import { ObserverTester } from './components/observerTester';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { SingletonTester } from './components/singletonTester';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   window.document.title = 'Password Validator Hook';
@@ -27,6 +28,9 @@ function App() {
               </Route>
               <Route path="/observerTester">
                 <ObserverTester />
+              </Route>
+              <Route path="/singletonTester">
+                <SingletonTester />
               </Route>
               <Route path="*">
                 <div>404 not fount component</div>
