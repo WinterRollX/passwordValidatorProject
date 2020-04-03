@@ -5,6 +5,7 @@ import { PasswordInput } from './components/passwordInput';
 import { DuckTester } from './components/duckTester';
 import { ObserverTester } from './components/observerTester';
 import { SingletonTester } from './components/singletonTester';
+import { DecoratorTester } from './components/decoratorTester';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -28,6 +29,9 @@ function App() {
               </Route>
               <Route path="/observerTester">
                 <ObserverTester />
+              </Route>
+              <Route path="/decoratorTester">
+                <DecoratorTester />
               </Route>
               <Route path="/singletonTester">
                 <SingletonTester />

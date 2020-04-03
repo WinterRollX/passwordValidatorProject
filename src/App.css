@@ -78,6 +78,40 @@
   margin-top: 20px;  
 }
 
+/* decorator tester */
+
+.menu-row {
+  display: block;
+}
+.menu-item-row-container {
+  width: 100%;
+  min-height: 30px;
+}
+.menu-item-name {
+
+}
+
+.menu-item-price {
+  float:right;
+}
+
+.menu-item-condiments, .menu-item-actions {
+  text-align: right;
+}
+
+.menu-item-condiments {
+  margin-top: 20px;
+}
+.menu-item-condiments>span, .menu-item-price>span {
+  margin-left: 20px;
+}
+
+.condiment-button {
+  width:150px;
+}
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

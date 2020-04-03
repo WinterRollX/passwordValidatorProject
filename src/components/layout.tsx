@@ -40,6 +40,7 @@ const Layout: React.FC<Props> =
                                 <Dropdown.Item><Link to='/passwordDemo' className = 'main-menu-link'>Password Hook</Link></Dropdown.Item>
                                 <Dropdown.Item><Link to='/duckTester' className = 'main-menu-link'>Duck tester</Link></Dropdown.Item>
                                 <Dropdown.Item><Link to='/observerTester' className = 'main-menu-link'>Observer Pattern</Link></Dropdown.Item>
+                                <Dropdown.Item><Link to='/decoratorTester' className = 'main-menu-link'>Decorator Pattern</Link></Dropdown.Item>
                                 <Dropdown.Item><Link to='/singletonTester' className = 'main-menu-link'>Singleton Tester</Link></Dropdown.Item>
                                 <Dropdown.Item><Link to='/' className = 'main-menu-link'>Home</Link></Dropdown.Item>
                             </Dropdown.Menu>
