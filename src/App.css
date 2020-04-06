@@ -110,6 +110,28 @@
   width:150px;
 }
 
+/* singleton tester */
+.singleton-tester-top-segment {
+  min-height: 500px;
+}
+.singleton-tester-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.singleton-tester-instance {
+  width: 40%;
+  min-height: 200px;
+}
+.singleton-tester-instance:first-of-type {
+  margin-bottom: 0;
+}
+
+.singleton-tester-instance:last-of-type {
+  margin-top: 0;
+}
+
 
 
 @keyframes App-logo-spin {
